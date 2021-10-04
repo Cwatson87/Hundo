@@ -1,2 +1,2 @@
-# JSTemplate
-A template for mini sites on my porfolio
+# Hundo
+Print out 100 numbers to a page
