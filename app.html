@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    
     </link>
 </head>
 
@@ -37,10 +38,10 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">The App</a>
+                        <a class="nav-link active" aria-current="page" href="app.html">The App</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">The Code</a>
+                        <a class="nav-link" href="code.html">The Code</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">The Repo</a>
@@ -54,13 +55,38 @@
     </nav>
 
     <main id="content" class="flex-shrink-0">
-        <div class="container">
-            <H1>App UI GOES HERE</H1>
-            <form>
-                <input  input id="message" type="text" placeholder="Enter A Message" required>
-                <button id="btnSubmit" type="button" class="btn btn-dark">Normal</button>
-                 <button id="btnSubmit2" type="button" class="btn btn-dark">Sweet Alert</button>
-            </form>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+<H1>Hundo Numbo: Coding Challenge</H1>
+            <h4>Get those numbos rolling! This is a program that dispalys numbers from one to one hundred.</h4>
+            <h2 class="mt-5 border-bottom border-2">Instuctions</h2>
+            <p>Enter a starting and ending value. Press the button and the values will apprear!</p>
+                </div>
+                <div class="col">
+                            <h5>Enter Values</h5>
+                            <form>
+                                <div class="row">
+                                    <div class="col">
+                                        <input id="startValue" type="number" class="form-control" placeholder="Start Value" value=0 aria-label="Start Value"></div>
+                                    <div class="col">
+                                        <input id="endValue" type="number" class="form-control"
+                                            placeholder="End Value" value=100 aria-label="End Value"></div>
+                                    <div class="col-12 d-flex justify-content-end mt-2">
+                                        <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Display the Numbo</button>
+                                    </div>
+                                         </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <h2 class="mt-5 border-bottom border-2"> Results</h2>
+                            <p id="results">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!--footer section-->
@@ -92,8 +118,7 @@
 
     <script src="js/site.js"></script>
     <script>
-        document.getElementById("btnSubmit").addEventListener("click",displayMessage);
-         document.getElementById("btnSubmit2").addEventListener("click",displayMessage2);
+        document.getElementById("btnSubmit").addEventListener("click",displayHundo);
     </script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
