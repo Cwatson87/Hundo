@@ -63,3 +63,11 @@ footer .social>a:hover{
     bottom: 0;
     width: 100%;
 }
+
+/* dispaly for even numbers in hundeo */
+
+.evenDisplay{
+    font-weight: 900;
+    color:var(--secondary-color);
+    font-size: 1.5em;
+}

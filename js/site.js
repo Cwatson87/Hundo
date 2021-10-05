@@ -1,5 +1,5 @@
 // displays a message to the user
-function displayHundo() {
+function getNumbers() {
 
     let startValue = 0;
     let endValue = 100;
@@ -60,13 +60,26 @@ function displayNumbers(numbers) {
     let startValue = numbers[0];
     let endIndex = numbers.length; //=100
 
-    let ptag = document.getElementById("results")
+    let tableBody = document.getElementById("results")
+
+    //clears out output
+    tableBody.innerHTML ="";
 
     for (let index = 0; index < numbers.length; index++) {
 
+        let tableRow="";
+
         //get the actual number
         let number = numbers[index];
-        ptag.innerHTML += number + " | ";
 
+        if (number % 2 == 0){
+
+            //the number is even
+        } else{
+             tableRow = `<tr><td class="evenDisplay">${number}</td> </tr>`;
+            // the number is odd
+            tableRow = `<tr><td>${number}</td></tr>`
+        }
+        tableBody.innerHTML += tableRow;
     }
 }
