@@ -76,10 +76,11 @@ function displayNumbers(numbers) {
 
             //the number is even
         } else{
-             tableRow = `<tr><td class="evenDisplay">${number}</td> </tr>`;
+             tableRow = `<tr><td> class="evenDisplay">${number}</td> </tr>`;
             // the number is odd
             tableRow = `<tr><td>${number}</td></tr>`
         }
         tableBody.innerHTML += tableRow;
+        rowCols[0]
     }
 }

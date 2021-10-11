@@ -9,7 +9,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "pwa-chrome",
-            "url": "http://127.0.0.1:5501/app.html",
+            "url": "http://127.0.0.1:5502/app.html",
             "webRoot": "${workspaceFolder}"
         }
 
